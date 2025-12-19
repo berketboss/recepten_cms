@@ -1,0 +1,630 @@
+/* Algemene opmaak - Sterrensite Stijl */
+body {
+    font-family: 'Open Sans', sans-serif; /* Subtiel, modern lettertype */
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8; /* Zeer lichte, schone achtergrond */
+    color: #333;
+    line-height: 1.7; /* Betere leesbaarheid */
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif; /* Elegant lettertype voor koppen */
+    color: #2c3e50; /* Diep donkerblauw */
+    font-weight: 700;
+}
+
+/* Header en Navigatie */
+header {
+    background-color: #1a2a3a; /* Zeer donkerblauw, bijna zwart */
+    color: white;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600; /* Iets dikker dan normaal */
+    padding: 8px 0;
+    display: inline-block;
+    transition: color 0.3s ease-in-out;
+    letter-spacing: 0.05em; /* Lichte letterafstand */
+}
+
+nav ul li a:hover {
+    color: #d4af37; /* Goudkleurig accent bij hover */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #1a2a3a; /* Consistent met header */
+    color: rgba(255, 255, 255, 0.7); /* Zacht wit */
+    margin-top: 60px;
+    font-size: 0.9em;
+}
+
+/* Hoofdpagina (Hero Section met Afbeelding) */
+.hero-image {
+    background-image: url('../img/hero_image.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 550px; /* Grotere hoogte voor impact */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); /* Diepere schaduw */
+}
+
+.hero-content {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6); /* Donkerdere, maar nog steeds transparante overlay */
+    padding: 50px 60px;
+    border-radius: 10px;
+    max-width: 800px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content h1 {
+    font-size: 3.5em; /* Grotere koptekst */
+    margin-bottom: 20px;
+    color: white; /* Wit voor contrast */
+}
+
+.hero-content p {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Styling voor knoppen (Call to Action) */
+.button {
+    display: inline-block;
+    background-color: #d4af37; /* Goudkleurig */
+    color: #1a2a3a; /* Donkere tekst op goud */
+    padding: 15px 35px;
+    margin-top: 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    background-color: #e6c257; /* Lichtere goudkleur bij hover */
+    transform: translateY(-2px); /* Subtiel 'lift' effect */
+}
+
+/* Feature Grid op de Homepagina */
+.container {
+    max-width: 1200px; /* Iets breder */
+    margin: 60px auto; /* Meer ruimte boven en onder */
+    padding: 0 25px;
+    text-align: center;
+}
+
+.features h2 {
+    margin-bottom: 50px;
+    color: #2c3e50;
+    font-size: 2.5em;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.features h2::after { /* Decoratieve lijn onder de titel */
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #d4af37; /* Goudkleurige lijn */
+    margin: 15px auto 0;
+}
+
+
+.feature-grid {
+    display: flex;
+    justify-content: center; /* Gecentreerd */
+    gap: 30px; /* Grotere afstand tussen elementen */
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Diepere, zachtere schaduw */
+    flex: 1 1 320px; /* Flexibel in grootte */
+    max-width: 380px; /* Max breedte */
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px); /* Subtiel 'lift' effect bij hover */
+}
+
+.feature-item h3 {
+    color: #d4af37; /* Goudkleurig voor feature titels */
+    margin-top: 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 12px;
+    margin-bottom: 18px;
+    font-size: 1.5em;
+}
+
+.feature-item p {
+    color: #555;
+}
+/* Stijlen voor de Recepten Overzichtspagina */
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.page-header h1 {
+    margin: 0;
+    color: #2c3e50;
+    font-size: 2.2em;
+}
+
+.page-header p {
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Inlogknop Stijl */
+.login-button {
+    background-color: #2c3e50; /* Donkerblauw */
+    color: white;
+    padding: 10px 20px;
+    font-size: 0.9em;
+}
+
+.login-button:hover {
+    background-color: #1a2a3a;
+}
+
+
+/* Recepten Grid Opmaak (10 recepten) */
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Responsief 3-kolom grid */
+    gap: 40px; /* Ruimte tussen de kaartjes */
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.recipe-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.recipe-card:hover {
+    transform: translateY(-8px); /* Meer opvallend hover-effect */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.recipe-image {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+}
+
+.recipe-content {
+    padding: 25px;
+    text-align: left;
+}
+
+.recipe-content h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6em;
+    color: #2c3e50;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    min-height: 50px; 
+}
+
+.recipe-date {
+    font-size: 0.85em;
+    color: #d4af37; /* Goudkleurig accent */
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.recipe-content p {
+    color: #555;
+    font-size: 0.95em;
+    margin-bottom: 20px;
+    min-height: 75px; 
+}
+
+.read-more-button {
+    padding: 8px 15px;
+    font-size: 0.9em;
+}
+
+/* Stijlen voor de Recept Detailpagina (Luxe Weergave) */
+
+.detail-content {
+    margin-top: 50px;
+    padding-bottom: 80px;
+}
+
+.detail-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.recipe-title {
+    font-size: 3em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.recipe-intro {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    font-size: 1.2em;
+    color: #555;
+    font-style: italic;
+}
+
+.recipe-meta {
+    display: block;
+    color: #d4af37;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    letter-spacing: 0.05em;
+}
+
+.recipe-media {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.main-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-body {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.section-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+
+.ingredients-section {
+    flex: 1;
+    min-width: 300px;
+}
+
+.preparation-section {
+    flex: 2;
+}
+
+.wine-section {
+    flex: 1 100%;
+    text-align: center;
+    background-color: #f0f0f0;
+    border-left: 5px solid #d4af37;
+    padding: 20px;
+}
+
+.section-card h2 {
+    color: #d4af37; 
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+/* Lijst styling */
+.ingredients-list, .preparation-steps {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.ingredients-list li {
+    margin-bottom: 10px;
+    color: #555;
+    list-style-type: square;
+}
+
+.preparation-steps li {
+    margin-bottom: 15px;
+    padding-left: 10px;
+    color: #333;
+}
+
+.signature {
+    margin-top: 15px;
+    font-style: italic;
+    color: #2c3e50;
+}
+
+.back-button {
+    display: block;
+    width: 250px;
+    margin: 30px auto 0;
+    text-align: center;
+}
+
+/* Responsive aanpassingen voor kleine schermen */
+@media (max-width: 768px) {
+    .recipe-body {
+        flex-direction: column;
+    }
+    .main-image {
+        border-radius: 0; 
+    }
+}
+/* Stijlen voor de Recepten Overzichtspagina */
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.page-header h1 {
+    margin: 0;
+    color: #2c3e50;
+    font-size: 2.2em;
+}
+
+.page-header p {
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Inlogknop Stijl */
+.login-button {
+    background-color: #2c3e50; /* Donkerblauw */
+    color: white;
+    padding: 10px 20px;
+    font-size: 0.9em;
+}
+
+.login-button:hover {
+    background-color: #1a2a3a;
+}
+
+
+/* Recepten Grid Opmaak (10 recepten) */
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Responsief 3-kolom grid */
+    gap: 40px; /* Ruimte tussen de kaartjes */
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.recipe-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.recipe-card:hover {
+    transform: translateY(-8px); /* Meer opvallend hover-effect */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.recipe-image {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+}
+
+.recipe-content {
+    padding: 25px;
+    text-align: left;
+}
+
+.recipe-content h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6em;
+    color: #2c3e50;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    min-height: 50px; 
+}
+
+.recipe-date {
+    font-size: 0.85em;
+    color: #d4af37; /* Goudkleurig accent */
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.recipe-content p {
+    color: #555;
+    font-size: 0.95em;
+    margin-bottom: 20px;
+    min-height: 75px; 
+}
+
+.read-more-button {
+    padding: 8px 15px;
+    font-size: 0.9em;
+}
+
+/* Stijlen voor de Recept Detailpagina (Luxe Weergave) */
+
+.detail-content {
+    margin-top: 50px;
+    padding-bottom: 80px;
+}
+
+.detail-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.recipe-title {
+    font-size: 3em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.recipe-intro {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    font-size: 1.2em;
+    color: #555;
+    font-style: italic;
+}
+
+.recipe-meta {
+    display: block;
+    color: #d4af37;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    letter-spacing: 0.05em;
+}
+
+.recipe-media {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.main-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-body {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.section-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+
+.ingredients-section {
+    flex: 1;
+    min-width: 300px;
+}
+
+.preparation-section {
+    flex: 2;
+}
+
+.wine-section {
+    flex: 1 100%;
+    text-align: center;
+    background-color: #f0f0f0;
+    border-left: 5px solid #d4af37;
+    padding: 20px;
+}
+
+.section-card h2 {
+    color: #d4af37; 
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+/* Lijst styling */
+.ingredients-list, .preparation-steps {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.ingredients-list li {
+    margin-bottom: 10px;
+    color: #555;
+    list-style-type: square;
+}
+
+.preparation-steps li {
+    margin-bottom: 15px;
+    padding-left: 10px;
+    color: #333;
+}
+
+.signature {
+    margin-top: 15px;
+    font-style: italic;
+    color: #2c3e50;
+}
+
+.back-button {
+    display: block;
+    width: 250px;
+    margin: 30px auto 0;
+    text-align: center;
+}
+
+/* Responsive aanpassingen voor kleine schermen */
+@media (max-width: 768px) {
+    .recipe-body {
+        flex-direction: column;
+    }
+    .main-image {
+        border-radius: 0; 
+    }
+}
